@@ -1,0 +1,217 @@
+
+/* #Media Queries
+================================================== */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+.logo {
+	width: 30%;
+}
+nav {
+	width: 60% !important;
+}
+.saerchcode {
+	width: 5%;
+}
+.search {
+	width: 5%;
+}
+nav ul li {
+	padding: 20px 12px;
+}
+#banner {
+	padding: 300px 0 70px;
+}
+#services, #testimonials, #about, #team, #clients, #posts, #contacts, #contact {
+	padding: 100px 0;
+}
+.portbanner {
+	padding: 45px 0 45px;
+}
+.imgDescription1 {
+	padding: 0px 0;
+}
+#team a {
+	margin-bottom: 0px;
+}
+.rightside p {
+	padding: 5px 0 5px;
+}
+.rightside {
+	padding: 5px;
+}
+.leftside, .rightside {
+	min-height: 163px;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.logo {
+	width: 25%;
+}
+.logo img {
+	width: 160px;
+	height: auto;
+	display: block;
+}
+nav {
+	width: 65% !important;
+}
+.saerchcode {
+	width: 5%;
+	margin-top: 12px;
+}
+.search {
+	width: 5%;
+	margin-top: 0px;
+}
+nav ul li {
+	padding: 12px 5px;
+}
+#banner {
+	padding: 250px 0 70px;
+}
+#services, #testimonials, #about, #team, #clients, #posts, #contacts, #contact {
+	padding: 50px 0;
+}
+#banner a.view {
+	margin: 50px auto 50px;
+}
+#services p {
+	margin-bottom: 40px;
+}
+#services article {
+	margin-bottom: 20px;
+}
+.portbanner {
+	padding: 45px 0 45px;
+}
+#team span.dottt {
+	margin: 20px auto 20px;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+	bottom: -35%;
+}
+#countermain h3 {
+	font-size: 36px;
+}
+#clients p {
+	margin-bottom: 40px;
+}
+p.paddbtm {
+	padding-bottom: 40px;
+}
+.leftside, .rightside {
+	min-height: 248px;
+	width: 50%;
+}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+.saerchcode {
+	display: none;
+}
+.search {
+	display: none;
+}
+.logo img {
+	width: 160px;
+	height: auto;
+	display: block;
+}
+.backcolor {
+	background: #fff;
+}
+header {
+    padding: 15px 0;
+}
+nav {
+    width: 100% !important;
+    float: left !important;
+    text-align: center;
+}
+nav ul li {
+    padding: 15px 15px;
+}
+#banner {
+	padding: 180px 0 50px;
+	background-position:right center;
+}
+#services, #testimonials, #about, #team, #clients, #posts, #contacts, #contact {
+	padding: 30px 0;
+}
+#banner h1 {
+    font-size: 26px;
+}
+#banner p {
+    font-size: 20px;
+    padding-top: 15px;
+}
+#banner a.view {
+    margin: 20px auto 35px;
+}
+#services p {
+    margin-bottom: 40px;
+}
+#services article {margin-bottom:20px;}
+.portbanner {
+    padding: 40px 0;
+}
+#portfoliolist .portfolio {
+    width: 100%;
+}
+#testimonials img {
+    margin: 0 auto;
+}
+#testimonials span , #testimonials h3{
+    text-align: center;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+	bottom: -35%;
+}
+p.paddbtm {
+     padding-bottom: 40px;
+}
+#about h3 {
+    margin-top: 15px;
+}
+#countermain p {
+    margin-bottom: 27px;
+}
+.leftside, .rightside {
+    width: 100%;
+    min-height: auto;
+}
+#testimonials p {
+    padding-bottom: 40px;
+}
+h2 {
+    font-size: 24px;
+}
+#team span.dottt{margin:20px auto;}
+#socials a {
+    margin: 15px 8px;
+}
+#socials {
+    padding: 30px 0;
+}
+#contact h3 {
+    margin-top: 20px;
+}
+header.sticky {
+    padding: 10px 0px;
+}
+#clients p {
+    margin-bottom: 40px;
+}
+.maxwidthsec {
+    margin-bottom: 50px;
+}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+}
