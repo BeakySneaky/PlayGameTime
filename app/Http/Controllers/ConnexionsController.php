@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
-class ConnexionController extends Controller
+class ConnexionsController extends Controller
 {
 
     /**

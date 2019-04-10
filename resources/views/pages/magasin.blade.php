@@ -18,9 +18,17 @@
                             <article class="jeu">
                                 @php ($i += 0.1)
                                 <a href="https://www.youtube.com/watch?v=y6120QOlsfU"><img
-                                            src="{{ asset('medias/categories/'. $article->type->photo) }}"
-                                            alt="{{$article->type->photo}}"
-                                            title="{{$article->type->nom}}" height="50" width="42"/></a>
+                                            @if (empty($article->image))
+                                            {{$image = asset('medias/categories/'. $article->type->photo)}}
+                                            {{$image_nom = $article->type->photo}}
+                                            @else
+                                            {{$image = asset('medias/produits/'.$article->image) }}
+                                            {{$image_nom = $article->image}}
+
+                                            @endif
+                                            src="{{$image}}"
+                                            alt="{{$image_nom}}"
+                                            title="{{$image_nom}}" height="50" width="42"/></a>
                                 <h3>{{ $article->nom }}</h3>
                                 <h3>Commençant à {{$article->prix}}$</h3>
                                 <p>{{$article->type->nom}}</p>

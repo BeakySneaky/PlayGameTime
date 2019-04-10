@@ -10,8 +10,9 @@
             </div>
         </div>
         <div class="container">
-            <form method="post" action="{{ route('produits.store') }}" >
+            <form method="post" action="{{ route('produits.store') }}" enctype="multipart/form-data" >
                 {{ csrf_field() }}
+{{--                NOM DE L'ARTICLE--}}
                 <div class="form-group row ">
                     <label for="article" class="col-form-label col-sm-2 alignerLabel">* Article : </label>
                     <div class="col-sm-8">
@@ -20,6 +21,7 @@
                     <h3 class="col-form-label ttip" title="Ce champ est obligatoire et vous ne pouvez pas dépasser plus que 64 caractères.">?</h3>
 
                 </div>
+{{--                DESCRIPTION--}}
                 <div class="form-group row">
                     <label for="description" class="col-sm-2 alignerLabel">Description : </label>
                     <div class="col-sm-8">
@@ -28,6 +30,7 @@
                     </div>
                     <h3 class="col-form-label ttip" title="Vous ne pouvez pas dépasser plus que 250 caractères.">?</h3>
                 </div>
+{{--                PRIX--}}
                 <div class="form-group row">
                     <label for="prix" class="col-form-label col-sm-2 alignerLabel">* Prix : </label>
                     <div class="col-sm-8">
@@ -36,6 +39,7 @@
                     <h3 class="col-form-label ttip" title="Ce champ est obligatoire et assurez-vous d'entrer un prix adéquat (entre 0.99 et 1000.00.">?</h3>
 
                 </div>
+{{--                TYPE--}}
                 <div class="form-group row">
                     <label for="type" class="col-form-label col-sm-2 alignerLabel">* Type : </label>
                     <div class="col-sm-8">
@@ -50,7 +54,16 @@
                     </div>
                     <h3 class="col-form-label ttip" title="Assurez-vous de choisir un type de console.">?</h3>
                 </div>
+{{--                AJOUT D'IMAGE--}}
+                <div class="form-group row">
+                    <label for="image" class="col-form-label col-sm-2 alignerLabel">* Image : </label>
+                    <div class="col-sm-8">
+                        <input type="file" class="form-control-file" name="image" id="image" value="{{old('image')}}">
+                    </div>
+                    <h3 class="col-form-label ttip" title="Ce champ requiert une image de type jpg, gif ou png.">?</h3>
 
+                </div>
+{{--                SOUMISSION--}}
                 <div class="form-group row">
                     <div class="col-lg-12">
                         <input type="submit" class="btn btn-dark" value="Enregistrer">

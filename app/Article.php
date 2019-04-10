@@ -37,5 +37,6 @@ class Article extends Model
         'description',
         'prix',
         'type_id',
+        'image',
     ];
 }

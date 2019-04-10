@@ -24,10 +24,11 @@ class ProduitRequest extends FormRequest
     public function rules()
     {
         return [
-            'nom' => 'required|max:100',
+            'nom' => 'required|max:100|unique:articles',
             'description' => 'max:255',
             'prix' => 'required|numeric|min:0.99|max:1000.00',
-            'type_id' => 'required|exists:types,id'
+            'type_id' => 'required|exists:types,id',
+            'image' => 'mimes:png,jpeg,jpg,gif|max:4096'
         ];
     }
 
@@ -36,6 +37,7 @@ class ProduitRequest extends FormRequest
     {
         return [
             'type_id.required' => 'Le produit doit être associé à une console.',
+            'nom.unique' => 'Un produit existe déjà sous ce nom.',
         ];
     }
 }

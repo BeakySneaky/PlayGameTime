@@ -19,7 +19,7 @@ class CreateArticlesTable extends Migration
             $table->text('description')->nullable();
             $table->decimal('prix');
             $table->integer('type_id')->unsigned();
-//          $table->string('photo');
+            $table->string('image')->nullable();
             $table->timestamps();
 
             //Foreign key

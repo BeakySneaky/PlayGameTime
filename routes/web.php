@@ -48,7 +48,7 @@ Route::get('magasin/creation', [
 
 Route::get('deconnexion', [
     'as' => 'connexion.deconnexion',
-    'uses'=> 'ConnexionController@deconnexion',
+    'uses'=> 'ConnexionsController@deconnexion',
 ])->middleware('auth');
 
 Route::post('produits', [
@@ -72,7 +72,7 @@ Route::post('utilisateurs', [
 
 Route::post('connexion', [
     'as' => 'connexion.authentification',
-    'uses' => 'ConnexionController@authentification',
+    'uses' => 'ConnexionsController@authentification',
 ]);
 
 Auth::routes();
