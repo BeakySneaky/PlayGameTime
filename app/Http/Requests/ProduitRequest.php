@@ -23,8 +23,15 @@ class ProduitRequest extends FormRequest
      */
     public function rules()
     {
+        $regleCode = 'required|max:100|unique:articles,nom';
+
+        if ('PATCH' == $this->method()) {
+            $id = $this->article->id;
+            $regleCode .= ',' . $id;
+        }
+
         return [
-            'nom' => 'required|max:100|unique:articles',
+            'nom' => $regleCode,
             'description' => 'max:255',
             'prix' => 'required|numeric|min:0.99|max:1000.00',
             'type_id' => 'required|exists:types,id',

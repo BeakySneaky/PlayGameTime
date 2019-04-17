@@ -9,30 +9,40 @@
                     <h2 class="os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.3s">Produits</h2>
                 </div>
             </div>
+
+
             <div class="row">
                 @php ($i = 0.5)
                 @if (isset($articles))
                     @forelse($articles as $article)
                         <div class="col-lg-4 col-sm-4 col-md-2 os-animation" data-os-animation="fadeIn"
                              data-os-animation-delay="{{$i."s"}}">
-                            <article class="jeu">
+                            @auth
+                                <a href="{{ route('produits.edit', [$article->id]) }}">Modifier</a> |
+                                <a href="#">Supprimer</a>
+                            @endauth
+                            <article class="jeu" onclick="redirectToEdit('{{route('produits.show', [$article->id]) }}')">
                                 @php ($i += 0.1)
-                                <a href="https://www.youtube.com/watch?v=y6120QOlsfU"><img
-                                            @if (empty($article->image))
-                                            {{$image = asset('medias/categories/'. $article->type->photo)}}
-                                            {{$image_nom = $article->type->photo}}
-                                            @else
-                                            {{$image = asset('medias/produits/'.$article->image) }}
-                                            {{$image_nom = $article->image}}
+                                {{--                                <a href="{{ route('produits.show', [$article->id]) }}">--}}
+                                <img
+                                        @if (empty($article->image))
+                                        {{$image = asset('medias/categories/'. $article->type->photo)}}
+                                        {{$image_nom = $article->type->photo}}
+                                        @else
+                                        {{$image = asset('medias/produits/'.$article->image) }}
+                                        {{$image_nom = $article->image}}
 
-                                            @endif
-                                            src="{{$image}}"
-                                            alt="{{$image_nom}}"
-                                            title="{{$image_nom}}" height="50" width="42"/></a>
+                                        @endif
+                                        src="{{$image}}"
+                                        alt="{{$image_nom}}"
+                                        title="{{$image_nom}}" height="50" width="42"/></a>
                                 <h3>{{ $article->nom }}</h3>
                                 <h3>Commençant à {{$article->prix}}$</h3>
                                 <p>{{$article->type->nom}}</p>
+                                @auth
+                                @endauth
                             </article>
+
                         </div>
                     @empty
                         <div class="col-lg-12">
@@ -52,3 +62,4 @@
     </section>
 
 @endsection
+

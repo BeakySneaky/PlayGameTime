@@ -76,3 +76,19 @@ Route::post('connexion', [
 ]);
 
 Auth::routes();
+
+//ACCÉDER À LA PAGE DU PRODUIT
+Route::get('magasin/{article}/details', [
+    'as' => 'produits.show',
+    'uses' => 'ProduitsController@show',
+]);
+
+//Modifier le produit
+Route::get('magasin/{article}/modification', [
+    'as' => 'produits.edit',
+    'uses' => 'ProduitsController@edit',
+]);
+Route::patch('magasin/{article}', [
+    'as' => 'produits.update',
+    'uses' => 'ProduitsController@update',
+]);

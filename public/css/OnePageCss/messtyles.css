@@ -76,7 +76,7 @@ header {
 }
 
 footer {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 @font-face {
@@ -104,6 +104,9 @@ footer {
     padding: 50px 0 10px;
     text-align: center;
 }
+#taches .text-justify {
+    text-align: justify;
+}
 
 #taches h2 {
     margin-bottom: 50px;
@@ -122,6 +125,12 @@ footer {
 #taches img {
     width: 75px;
     margin-top: 25px;
+}
+#taches img.pageArticle-img{
+    width: 350px;
+    height: 250px;
+    margin-top: 0px;
+
 }
 #taches article.accueil a {
     width: 122px;
@@ -179,6 +188,8 @@ footer {
 .ttip:hover{
     color: #b15700;
 }
+
+
 /**************************************************************************************/
 /* *** Divers */
 /**************************************************************************************/
