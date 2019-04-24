@@ -56,7 +56,7 @@ class ProduitsController extends Controller
      */
     public function store(ProduitRequest $request)
     {
-        $uploadedFile = $request->file('image');   // 'photo' est l'attribut name du <input type="file">
+        $uploadedFile = $request->file('image');
         if ($uploadedFile) {
             $nomFichierOriginal = pathinfo($uploadedFile->getClientOriginalName(), PATHINFO_FILENAME);
             $nomFichier = stringToSlug($nomFichierOriginal) . '-' . uniqid();
@@ -65,7 +65,6 @@ class ProduitsController extends Controller
         try {
             // $file sera de type Symfony\Component\HttpFoundation\File\File
             // si on n'a pas besoin de la variable qui représente le fichier après l'avoir déplacé, on peut faire le move sans retenir $file
-
             if ($uploadedFile) {
                 $file = $uploadedFile->move(public_path() . "/medias/produits", $nomFichier . '.' . $extension);
             }
@@ -118,11 +117,33 @@ class ProduitsController extends Controller
      */
     public function update(ProduitRequest $request, Article $article): RedirectResponse
     {
+
+
+
+        $uploadedFile = $request->file('image');
+        if ($uploadedFile) {
+            $nomFichierOriginal = pathinfo($uploadedFile->getClientOriginalName(), PATHINFO_FILENAME);
+            $nomFichier = stringToSlug($nomFichierOriginal) . '-' . uniqid();
+            $extension = $uploadedFile->extension();
+        }
+        else if ($request->effacer){
+            \File::Delete('medias/produits/' . $article->image);
+            \Log::Debug(public_path() . 'medias/produits/' . $article->image);
+        }
         try {
+            if ($uploadedFile) {
+                $file = $uploadedFile->move(public_path() . "/medias/produits", $nomFichier . '.' . $extension);
+            }
             $article->nom = $request->nom;
             $article->description = $request->description;
             $article->prix = $request->prix;
             $article->type_id = $request->type_id;
+            if ($uploadedFile) {
+                $article->image = $nomFichier . "." . $extension;
+            }
+            else if ($request->effacer){
+                $article->image = null;
+            }
             $article->save();
         } catch (\Symfony\Component\HttpFoundation\File\Exception\FileException $e) {
 

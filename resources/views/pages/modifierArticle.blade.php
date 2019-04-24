@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="container">
-            <form method="POST" action="{{ route('produits.update', [$article->id]) }}">
+            <form method="POST" action="{{ route('produits.update', [$article->id]) }}" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 {{ method_field('PATCH') }}
                 {{--                NOM DE L'ARTICLE--}}
@@ -37,7 +37,8 @@
                 <div class="form-group row">
                     <label for="prix" class="col-form-label col-sm-2 alignerLabel">Prix : </label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" name="prix" id="prix" required value="{{$article->prix}}">
+                        <input type="text" class="form-control" name="prix" id="prix" required
+                               value="{{$article->prix}}">
                     </div>
                     <h3 class="col-form-label ttip"
                         title="Ce champ est obligatoire et assurez-vous d'entrer un prix adéquat (entre 0.99 et 1000.00.">
@@ -60,16 +61,39 @@
                     </div>
                     <h3 class="col-form-label ttip" title="Assurez-vous de choisir un type de console.">?</h3>
                 </div>
-{{--                --}}{{--                AJOUT D'IMAGE--}}
-{{--                <div class="form-group row">--}}
-{{--                    <label for="image" class="col-form-label col-sm-2 alignerLabel">* Image : </label>--}}
-{{--                    <div class="col-sm-8">--}}
-{{--                        <input type="file" class="form-control-file" name="image" id="image" value="{{old('image')}}">--}}
-{{--                    </div>--}}
-{{--                    <h3 class="col-form-label ttip" title="Ce champ requiert une image de type jpg, gif ou png.">?</h3>--}}
+                {{--                AJOUT D'IMAGE--}}
+                <div class="form-group row">
+                    <label for="image" class="col-form-label col-sm-2 alignerLabel">* Image : </label>
+                    <div id="appendedInput">
 
-{{--                </div>--}}
-                {{--                SOUMISSION--}}
+
+                    </div>
+
+                    @if (filled($article->image))
+                        <div id="thisImage" class="thisImage col-lg-8">
+                            <img
+                                    {{$image = asset('medias/produits/'.$article->image) }}
+                                    {{$image_nom = $article->image}}
+                                    src="{{$image}}"
+                                    alt="{{$image_nom}}"
+                                    title="{{$image_nom}}" class="modif-img"/>
+                            <div class="thisText">
+                                <a>Supprimer</a>
+                            </div>
+                        </div>
+
+                    @else
+                        <div class="col-sm-8">
+                            <input type="file" class="form-control-file" name="image" id="image"
+                                   value="{{old('image')}}">
+                            <input type="hidden" name="effacer" value="effacer"/>
+                        </div>
+                        <h3 class="col-form-label ttip" title="Ce champ requiert une image de type jpg, gif ou png.">
+                            ?</h3>
+                    @endif
+                </div>
+
+
                 <div class="form-group row">
                     <div class="col-lg-12">
                         <input type="submit" class="btn btn-dark" value="Enregistrer">

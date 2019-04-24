@@ -57,25 +57,26 @@
                 </a>
 
                 {{-- menu principal ************************************************************************* --}}
+                @unless (App::isDownForMaintenance())
+                    <nav class="nav-collapse">
 
-                <nav class="nav-collapse">
-                    <ul>
-                        <li class="menu-item"><a href="{{ route('pages.accueil') }}" data-scroll>Accueil</a></li>
-                        <li class="menu-item"><a href="{{ route('produits.magasin') }}" data-scroll>Magasin</a></li>
-                        <li class="menu-item"><a href="{{ route('pages.contact') }}" data-scroll>Contact</a></li>
-                        @auth
-                            {{-- usager authentifié : afficher le bouton de déconnexion --}}
-                            <li class="menu-item"><a href="{{ route('connexion.deconnexion') }}" data-scroll>Déconnexion</a>
-                            </li>
-                        @else
-                            {{-- usager non authentifié : afficher le bouton de connexion --}}
-                            <li class="menu-item"><a href="{{ route('pages.connexion') }}" data-scroll>Connexion</a>
-                            </li>
+                        <ul>
+                            <li class="menu-item"><a href="{{ route('pages.accueil') }}" data-scroll>Accueil</a></li>
+                            <li class="menu-item"><a href="{{ route('produits.magasin') }}" data-scroll>Magasin</a></li>
+                            <li class="menu-item"><a href="{{ route('pages.contact') }}" data-scroll>Contact</a></li>
+                            @auth
+                                {{-- usager authentifié : afficher le bouton de déconnexion --}}
+                                <li class="menu-item"><a href="{{ route('connexion.deconnexion') }}" data-scroll>Déconnexion</a>
+                                </li>
+                            @else
+                                {{-- usager non authentifié : afficher le bouton de connexion --}}
+                                <li class="menu-item"><a href="{{ route('pages.connexion') }}" data-scroll>Connexion</a>
+                                </li>
 
-                        @endauth
-                    </ul>
-                </nav>
-
+                            @endauth
+                        </ul>
+                    </nav>
+                @endunless
             </div>
 
         </div>

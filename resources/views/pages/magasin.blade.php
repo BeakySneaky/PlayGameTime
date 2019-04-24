@@ -21,6 +21,7 @@
                                 <a href="{{ route('produits.edit', [$article->id]) }}">Modifier</a> |
                                 <a href="#">Supprimer</a>
                             @endauth
+{{--                            TODO : ENLEVER LE ONCLICK--}}
                             <article class="jeu" onclick="redirectToEdit('{{route('produits.show', [$article->id]) }}')">
                                 @php ($i += 0.1)
                                 {{--                                <a href="{{ route('produits.show', [$article->id]) }}">--}}
@@ -35,7 +36,7 @@
                                         @endif
                                         src="{{$image}}"
                                         alt="{{$image_nom}}"
-                                        title="{{$image_nom}}" height="50" width="42"/></a>
+                                        title="{{$image_nom}}" height="50" width="42"/>
                                 <h3>{{ $article->nom }}</h3>
                                 <h3>Commençant à {{$article->prix}}$</h3>
                                 <p>{{$article->type->nom}}</p>

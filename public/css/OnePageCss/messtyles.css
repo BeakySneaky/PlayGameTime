@@ -132,6 +132,11 @@ footer {
     margin-top: 0px;
 
 }
+
+#taches img.modif-img{
+    width: 350px;
+    height: 250px;
+}
 #taches article.accueil a {
     width: 122px;
     height: 122px;
@@ -187,6 +192,25 @@ footer {
 }
 .ttip:hover{
     color: #b15700;
+}
+.thisImage:hover .thisText{
+    opacity: 2; !important;
+}
+.thisImage:hover img{
+    opacity: 0.5;
+}
+.thisText{
+    transition:0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    text-align: center;
+}
+
+.thisImage{
+    transition:0.5s ease;
+
 }
 
 

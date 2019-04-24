@@ -30,6 +30,7 @@ class ProduitRequest extends FormRequest
             $regleCode .= ',' . $id;
         }
 
+
         return [
             'nom' => $regleCode,
             'description' => 'max:255',
