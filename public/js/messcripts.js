@@ -13,5 +13,10 @@ $(document).ready(function () {
         }
 
     });
+    $('.a_link').click(function () {
 
+        $(this).parent().submit();
+
+
+    })
 });

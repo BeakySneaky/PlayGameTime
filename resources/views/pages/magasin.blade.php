@@ -18,10 +18,15 @@
                         <div class="col-lg-4 col-sm-4 col-md-2 os-animation" data-os-animation="fadeIn"
                              data-os-animation-delay="{{$i."s"}}">
                             @auth
-                                <a href="{{ route('produits.edit', [$article->id]) }}">Modifier</a> |
-                                <a href="#">Supprimer</a>
+
+                                <form class="supprimer" method="POST" action="{{ route('produits.destroy', [ $article->id ]) }}">
+                                    @csrf
+                                    @method('DELETE')
+                                    <a href="{{ route('produits.edit', [$article->id]) }}">Modifier</a> |
+                                    <a class="a_link">Supprimer</a>
+                                </form>
                             @endauth
-{{--                            TODO : ENLEVER LE ONCLICK--}}
+{{--                            TODO : ENLEVER LE ONCLICK & DISABLE ON DELETE CLICK--}}
                             <article class="jeu" onclick="redirectToEdit('{{route('produits.show', [$article->id]) }}')">
                                 @php ($i += 0.1)
                                 {{--                                <a href="{{ route('produits.show', [$article->id]) }}">--}}

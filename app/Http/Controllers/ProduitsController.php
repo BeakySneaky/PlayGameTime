@@ -162,9 +162,13 @@ class ProduitsController extends Controller
      *
      * @param int $id
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
-    public function destroy($id)
+    public function destroy(Article $article)
     {
-        //
+        \File::Delete('medias/produits/' . $article->image);
+        $article->delete();
+        flash('Le produit a été supprimé avec succès !')->success();
+        return redirect()->route('produits.magasin');
     }
 }

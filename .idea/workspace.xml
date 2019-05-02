@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/public/css/OnePageCss/messtyles.css" line="138" />
-    <bookmark url="file://$PROJECT_DIR$/public/css/OnePageCss/messtyles.css" line="198" />
+    <bookmark url="file://$PROJECT_DIR$/public/css/OnePageCss/messtyles.css" line="141" />
+    <bookmark url="file://$PROJECT_DIR$/public/css/OnePageCss/messtyles.css" line="210" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59dcdb57-be01-4cb1-b279-864c06d58310" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/errors/503.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProduitsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProduitsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProduitRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ProduitRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/OnePageCss/messtyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/OnePageCss/messtyles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/messcripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/messcripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/medias/produits/cyberpunk2077-5cb77ff96e66f.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/magasin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/magasin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/modifierArticle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/modifierArticle.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,39 +23,12 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/creation.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="100" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="100" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/modifierArticle.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/messcripts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="97" selection-start-line="11" selection-start-column="97" selection-end-line="11" selection-end-column="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProduitsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="141" column="65" lean-forward="true" selection-start-line="141" selection-start-column="65" selection-end-line="141" selection-end-column="65" />
+            <state relative-caret-position="1730">
+              <caret line="170" column="68" lean-forward="true" selection-start-line="170" selection-start-column="68" selection-end-line="170" selection-end-column="68" />
               <folding>
                 <element signature="e#41#57#0#PHP" expanded="true" />
               </folding>
@@ -68,10 +37,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/ProduitRequest.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+            <state relative-caret-position="650">
+              <caret line="96" column="31" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/magasin.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/creation.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="68" column="26" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/OnePageCss/messtyles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="605">
+              <caret line="219" column="14" lean-forward="true" selection-start-line="219" selection-start-column="14" selection-end-line="219" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/messcripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -160,7 +174,6 @@
         <option value="$PROJECT_DIR$/app/fonctions/stringToSlug.php" />
         <option value="$PROJECT_DIR$/config/filesystems.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_11_144126_create_articles_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/accueil.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/erreurs/404.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/erreurs/500.blade.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
@@ -168,17 +181,18 @@
         <option value="$PROJECT_DIR$/resources/views/errors/404.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/errors/500.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/produitEdit.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/pageArticle.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/errors/503.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/OnePageCss/messtyles.css" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Http/Requests/ProduitRequest.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/magasin.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/modifierArticle.blade.php" />
-        <option value="$PROJECT_DIR$/public/js/messcripts.js" />
+        <option value="$PROJECT_DIR$/resources/views/pages/accueil.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProduitsController.php" />
+        <option value="$PROJECT_DIR$/public/css/OnePageCss/messtyles.css" />
+        <option value="$PROJECT_DIR$/public/js/messcripts.js" />
+        <option value="$PROJECT_DIR$/resources/views/pages/magasin.blade.php" />
       </list>
     </option>
   </component>
@@ -294,9 +308,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="18" />
+    <option name="y" value="-1" />
     <option name="width" value="1920" />
-    <option name="height" value="853" />
+    <option name="height" value="1033" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -304,7 +318,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,87 +328,12 @@
             <path>
               <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
               <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="fonctions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="seeds" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
               <item name="playgametime" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="medias" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="medias" type="462c0819:PsiDirectoryNode" />
-              <item name="produits" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
@@ -407,20 +345,6 @@
               <item name="playgametime" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="errors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
@@ -432,24 +356,21 @@
             <path>
               <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
               <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="playgametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="playgametime" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -530,24 +451,24 @@
       <workItem from="1554984121397" duration="254000" />
       <workItem from="1555072076156" duration="1921000" />
       <workItem from="1555517543495" duration="15656000" />
-      <workItem from="1556120903034" duration="12891000" />
+      <workItem from="1556120903034" duration="12929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174999000" />
+    <option name="totallyTimeSpent" value="180026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1033" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49721915" visible="true" weight="0.16275346" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49721915" visible="true" weight="0.2497332" />
       <window_info id="Structure" order="1" sideWeight="0.50278085" side_tool="true" weight="0.20811099" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3277592" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32998884" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3979933" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -589,9 +510,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -681,13 +599,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/medias/produits/_tmp_phpIdXybX/trueOpression-5cae33df9d37b.png" />
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-04-10.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-04-10.log" />
     <entry file="file://$PROJECT_DIR$/public/medias/produits/Screenshot_from_2019-03-28_08-24-37-5cae368245daa.png" />
     <entry file="file://$PROJECT_DIR$/public/medias/produits/Screenshot_from_2019-03-28_08-24-37-5cae36b4dca1e.png" />
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/ConnexionRequest.php">
@@ -763,25 +675,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-04-17.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74849" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/accueil.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="26" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-04-17.log" />
     <entry file="file://$PROJECT_DIR$/resources/views/errors/404.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -817,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/OnePageCss/messtyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="199" column="17" lean-forward="true" selection-start-line="199" selection-start-column="17" selection-end-line="199" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_11_144126_create_articles_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -838,26 +725,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/creation.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="100" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/magasin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/medias/produits/cyberpunk2077-5cb77ff96e66f.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/medias/produits/Screenshot_from_2019-03-28_08-24-37-5cc0b502d65b6.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/medias/produits/cyberpunk2077-5cb77ff96e66f.jpeg" />
+    <entry file="file://$PROJECT_DIR$/public/medias/produits/Screenshot_from_2019-03-28_08-24-37-5cc0b502d65b6.png" />
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/ProduitRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -878,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/messcripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="97" selection-start-line="11" selection-start-column="97" selection-end-line="11" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-04-24.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -892,13 +754,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/accueil.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="96" column="31" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/creation.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="68" column="26" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/OnePageCss/messtyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="219" column="14" lean-forward="true" selection-start-line="219" selection-start-column="14" selection-end-line="219" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProduitsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="141" column="65" lean-forward="true" selection-start-line="141" selection-start-column="65" selection-end-line="141" selection-end-column="65" />
+        <state relative-caret-position="1730">
+          <caret line="170" column="68" lean-forward="true" selection-start-line="170" selection-start-column="68" selection-end-line="170" selection-end-column="68" />
           <folding>
             <element signature="e#41#57#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/magasin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/messcripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>

@@ -92,3 +92,12 @@ Route::patch('magasin/{article}', [
     'as' => 'produits.update',
     'uses' => 'ProduitsController@update',
 ]);
+
+//Supprimer l'article
+Route::delete('magasin/{article}', [
+
+    'as' => 'produits.destroy',
+
+    'uses' => 'ProduitsController@destroy',
+
+]);

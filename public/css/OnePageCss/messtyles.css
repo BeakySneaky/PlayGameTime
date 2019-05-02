@@ -2,7 +2,7 @@
 /* *** Ajustement des couleurs */
 /**************************************************************************************/
 a {
-    color: #b15700;   /* vert du logo */
+    color: #b15700; /* vert du logo */
 }
 
 a:hover {
@@ -18,12 +18,12 @@ a:hover {
 }
 
 nav ul li a:hover {
-    border-left: 5px solid #ff6600;   /* bleu du logo */
+    border-left: 5px solid #ff6600; /* bleu du logo */
 
 }
 
 #socials {
-    background: #b15700;   /* bleu du logo */
+    background: #b15700; /* bleu du logo */
     padding: 20px 0;
 }
 
@@ -34,6 +34,7 @@ nav ul li a:hover {
 footer p a:hover {
     color: #b15700;
 }
+
 /**************************************************************************************/
 /* *** Autres ajustements */
 /**************************************************************************************/
@@ -52,7 +53,7 @@ header {
 
 #banner {
     background: url("/medias/commun/sunsetbackground.jpg") no-repeat center top;
-    border-bottom: 5px solid  #b15700;
+    border-bottom: 5px solid #b15700;
     padding: 50px 0 100px;
 }
 
@@ -80,8 +81,8 @@ footer {
 }
 
 @font-face {
-    src:url("/public/medias/commun/responsivenav2.eot");
-    src:url("/public/medias/commun/responsivenav2.eot?#iefix") format("embedded-opentype"),
+    src: url("/public/medias/commun/responsivenav2.eot");
+    src: url("/public/medias/commun/responsivenav2.eot?#iefix") format("embedded-opentype"),
     url("/public/medias/commun/responsivenav.ttf") format("truetype"),
     url("/public/medias/commun/responsivenav.woff") format("woff"),
     url("/public/medias/commun/responsivenav2.svg#responsivenav") format("svg");
@@ -104,6 +105,7 @@ footer {
     padding: 50px 0 10px;
     text-align: center;
 }
+
 #taches .text-justify {
     text-align: justify;
 }
@@ -126,17 +128,19 @@ footer {
     width: 75px;
     margin-top: 25px;
 }
-#taches img.pageArticle-img{
+
+#taches img.pageArticle-img {
     width: 350px;
     height: 250px;
     margin-top: 0px;
 
 }
 
-#taches img.modif-img{
+#taches img.modif-img {
     width: 350px;
     height: 250px;
 }
+
 #taches article.accueil a {
     width: 122px;
     height: 122px;
@@ -148,6 +152,7 @@ footer {
     box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.4);
     color: #000;
 }
+
 #taches article.jeu a {
     display: block;
     margin: 0 auto 25px;
@@ -165,42 +170,50 @@ footer {
 }
 
 #taches .fa-cog {
-    color: #AE3451;   /* rose du logo */
+    color: #AE3451; /* rose du logo */
 }
 
 #taches .fa-child {
     color: #3B8EAF;
 }
-#taches .jeu{
+
+#taches .jeu {
     line-height: 35px;
 }
-#taches .jeu:hover{
+
+#taches .jeu:hover {
     display: block;
     background-color: white;
     box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.2);
     color: #000;
-    transition:.5s;
+    transition: .5s;
 }
-.alignerLabel{
+
+.alignerLabel {
     text-align: right;
 }
 
-.ttip{
+.ttip {
     color: #000;
     cursor: pointer;
     margin-bottom: 20px;
 }
-.ttip:hover{
+
+.ttip:hover {
     color: #b15700;
 }
-.thisImage:hover .thisText{
-    opacity: 2; !important;
+
+.thisImage:hover .thisText {
+    opacity: 2;
+!important;
 }
-.thisImage:hover img{
+
+.thisImage:hover img {
     opacity: 0.5;
 }
-.thisText{
-    transition:0.5s ease;
+
+.thisText {
+    transition: 0.5s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -208,11 +221,20 @@ footer {
     text-align: center;
 }
 
-.thisImage{
-    transition:0.5s ease;
+.thisImage {
+    transition: 0.5s ease;
 
 }
 
+.a_link{
+    color: #b15700 !important;
+
+}
+
+.a_link:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+}
 
 /**************************************************************************************/
 /* *** Divers */
