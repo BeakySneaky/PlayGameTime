@@ -17,13 +17,17 @@
     <meta name="theme-color" content="#ffffff">
 
     <!--FONTS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,400italic' rel='stylesheet'
           type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
 
+
+
+
     <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/OnePageCss/grid.css') }}">
@@ -33,7 +37,15 @@
     <link rel="stylesheet" href="{{ asset('css/OnePageCss/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('css/OnePageCss/messtyles.css') }}">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139518099-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'UA-139518099-1');
+    </script>
 </head>
 
 <body>
@@ -152,6 +164,7 @@
 {{-- ******************************************************************************************** --}}
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
 <script src="{{ asset('js/OnePageJs/jquery.mixitup.min.js') }}"></script>
 <script src="{{ asset('js/OnePageJs/jquery.bxslider.js') }}"></script>
 <script src="{{ asset('js/OnePageJs/script.js') }}"></script>

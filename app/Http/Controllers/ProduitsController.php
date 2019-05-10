@@ -166,9 +166,20 @@ class ProduitsController extends Controller
      */
     public function destroy(Article $article)
     {
-        \File::Delete('medias/produits/' . $article->image);
-        $article->delete();
-        flash('Le produit a été supprimé avec succès !')->success();
-        return redirect()->route('produits.magasin');
+        $reussi = true;
+        try {
+            \File::Delete('medias/produits/' . $article->image);
+            $article->delete();
+        }
+        catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e){
+            \Log::Debug($article);
+            $reussi = false;
+        }
+        catch(\Throwable $e) {
+            \Log::error("Erreur inattendue. ", [$e]);
+            $reussi = false;
+        }
+
+        return json_encode(compact('reussi'));
     }
 }

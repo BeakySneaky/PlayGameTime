@@ -26,10 +26,8 @@
                                     <a class="a_link">Supprimer</a>
                                 </form>
                             @endauth
-{{--                            TODO : ENLEVER LE ONCLICK & DISABLE ON DELETE CLICK--}}
-                            <article class="jeu" onclick="redirectToEdit('{{route('produits.show', [$article->id]) }}')">
+                            <article class="jeu" id ="jeu{{$article->id}}" data-url="{{ route('produits.show', [$article->id]) }}">
                                 @php ($i += 0.1)
-                                {{--                                <a href="{{ route('produits.show', [$article->id]) }}">--}}
                                 <img
                                         @if (empty($article->image))
                                         {{$image = asset('medias/categories/'. $article->type->photo)}}
