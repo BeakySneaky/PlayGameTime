@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Commentaire;
+use App\Page;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\View\View;
@@ -15,8 +16,9 @@ class PagesController extends Controller
      */
     public function accueil(): View
     {
+        $page = Page::where('url', '=', '/')->first();
         $commentaires = Commentaire::orderBy('date_du_commentaire')->get();
-        return View('pages/accueil', compact('commentaires'));
+        return View('pages/accueil', compact('commentaires', "page"));
     }
 
     /**
@@ -39,7 +41,8 @@ class PagesController extends Controller
 
     public function contact(): View
     {
-        return View('pages/contact');
+        $page = Page::where('url', '=', 'contact')->first();
+        return View('pages/contact', compact('page'));
     }
 
 
@@ -120,4 +123,5 @@ class PagesController extends Controller
     {
         //
     }
+
 }

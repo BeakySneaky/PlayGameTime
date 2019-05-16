@@ -239,3 +239,14 @@ footer {
 /**************************************************************************************/
 /* *** Divers */
 /**************************************************************************************/
+
+/* ********************************************************* */
+/* *** TinyMCE ********************************************* */
+/* ********************************************************* */
+/*Pour forcer un saut de ligne dans les toolbars. On pouvait le faire en TinyMCE 4 mais ne fonctionne plus sans ce hack en TinyMCE 5.*/
+/*Inspiré de : https://codepen.io/zortext/pen/wZgBpG*/
+.tox-tinymce .tox-toolbar > .tox-toolbar__group:nth-child(7) {
+    height: 0;
+    overflow: hidden;
+    width:100vw;
+}

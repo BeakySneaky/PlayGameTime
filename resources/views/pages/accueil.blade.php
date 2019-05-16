@@ -1,13 +1,12 @@
 @extends('layouts.app')
-@section('titre', 'Accueil')
-@section('h1', "Play Game Time !")
+@section('titre', $page->title)
+@section('h1', $page->h1)
 @section('contenu')
     <section id="taches">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.3s">Mes tâches</h2>
-                    <p>Ce site web fera office de magasin en ligne pour la vente de jeux vidéos / consoles.</p>
+                    {!! $page->texte !!}
                 </div>
             </div>
 

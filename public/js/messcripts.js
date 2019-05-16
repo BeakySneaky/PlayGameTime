@@ -2,7 +2,89 @@ function redirectToEdit(route) {
     window.location.href = route;
 }
 
-function supprimerArticle($bouton){
+
+$(document).ready(function () {
+    /**
+     * EXAMEN 2 LISTE CLIENT AJAX
+     *
+     */
+    //APPEL AJAX EXAM
+    $('#statut_id').change(function (event) {
+        var $bouton = $(this);
+        event.preventDefault();    // peu d'utilité ici mais ce serait nécessaire si l'appel AJAX était généré par un clic sur un bouton
+        afficherListeClient($bouton);
+
+    });
+
+
+
+    var thisAppend = jQuery('#appendedInput');
+    $('#thisImage').click(function () {
+        if (thisAppend.children().length === 0) {
+            thisAppend.append(
+                '<input type="file" class="form-control-file" name="image" id="image"\n' +
+                'value="{{old(\'image\')}}">' + '<input type="hidden" name="effacer" value="effacer">')
+        }
+
+    });
+    //APPEL AJAX
+    $('.a_link').click(function (event) {
+        var $bouton = $(this);
+        event.preventDefault();    // peu d'utilité ici mais serait nécessaire si l'appel AJAX était généré par un clic sur un bouton
+        afficherPopupConfirmation("Désirez-vous vraiment supprimer cet item ?", function () {
+            supprimerArticle($bouton)
+        });
+
+    });
+    //SUPPRESSION SANS AJAX
+    // $('.a_link').click(function () {
+    //
+    //     afficherPopupConfirmationSubmit('Désirez-vous vraiment supprimer cet item ?', $(this).parents("form:first"));
+    //     // $(this).parent().submit();
+    //
+    //
+    // })
+
+    $('.jeu').click(function () {
+        $(location).attr('href', $(this).data('url'))
+    })
+});
+
+/**
+ * CODE ORIGINAL PAR CHRISTIANE LAGACÉ
+ * EXAMEN 2 APPEL AJAX
+ */
+function afficherListeClient($bouton){
+    // retrouver les données du formulaire
+    var $formulaire = $bouton.parents("form:first");     // formulaire dans lequel la balise qui a généré l'appel AJAX était placée
+    var donneesFormulaire = $formulaire.serialize();     // donc le jeton anti-CSRF est inclus.
+    var actionFormulaire = $formulaire.attr('action');   // l'URL pour l'appel AJAX doit être absolu.
+    // appel AJAX
+    $.ajax({
+        type: "POST",
+        url: actionFormulaire,
+        dataType: "json",
+        data: donneesFormulaire
+    })
+        .done(function (response, textStatus, jqXHR) {
+            if (response.valide) {
+                // l'utilisation de render() a placé dans la variable contenuHTML tout le code HTML de la vue
+                $('#donnees').html(response.contenuHTML);
+            } else {
+                alert(response.contenuHTML);
+            }
+        })
+        .fail(function (jqXHR, textStatus, errorThrown) {
+            afficherPopupErreur('Oups, un problème a empêché l\'affichage des clients.');
+        });
+}
+
+
+
+
+
+
+function supprimerArticle($bouton) {
 
 
     // formulaire dans lequel la balise qui a généré l'appel AJAX était placée
@@ -35,39 +117,6 @@ function supprimerArticle($bouton){
             afficherPopupErreur('Nous sommes désolés, il n\'est pas possible de compléter l\'opération pour l\'instant.');
         });
 }
-
-
-$(document).ready(function () {
-    var thisAppend = jQuery('#appendedInput');
-    $('#thisImage').click(function () {
-        if (thisAppend.children().length === 0) {
-            thisAppend.append(
-                '<input type="file" class="form-control-file" name="image" id="image"\n' +
-                'value="{{old(\'image\')}}">' + '<input type="hidden" name="effacer" value="effacer">')
-        }
-
-    });
-    //APEL AJAX
-    $('.a_link').click(function (event) {
-        var $bouton = $(this);
-        event.preventDefault();    // peu d'utilité ici mais serait nécessaire si l'appel AJAX était généré par un clic sur un bouton
-        afficherPopupConfirmation("Désirez-vous vraiment supprimer cet item ?", function() {supprimerArticle($bouton)});
-
-    });
-
-    //SUPPRESSION SANS AJAX
-    // $('.a_link').click(function () {
-    //
-    //     afficherPopupConfirmationSubmit('Désirez-vous vraiment supprimer cet item ?', $(this).parents("form:first"));
-    //     // $(this).parent().submit();
-    //
-    //
-    // })
-
-    $('.jeu').click(function () {
-        $(location).attr('href', $(this).data('url'))
-    })
-});
 
 //--------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------//
@@ -279,4 +328,6 @@ function afficherPopupConfirmation(question, callback) {
 //--------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------//
+
+
 

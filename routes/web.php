@@ -24,7 +24,7 @@ Route::get('/inscription', [
     'uses' => 'PagesController@inscription'
 ]);
 //CONNEXION
-Route::get('/connexion',[
+Route::get('/connexion', [
     'as' => 'pages.connexion',
     'uses' => 'PagesController@connexion'
 ])->middleware('guest');
@@ -48,7 +48,7 @@ Route::get('magasin/creation', [
 
 Route::get('deconnexion', [
     'as' => 'connexion.deconnexion',
-    'uses'=> 'ConnexionsController@deconnexion',
+    'uses' => 'ConnexionsController@deconnexion',
 ])->middleware('auth');
 
 Route::post('produits', [
@@ -99,5 +99,23 @@ Route::delete('magasin/{article}', [
     'as' => 'produits.destroy',
 
     'uses' => 'ProduitsController@destroy',
+
+]);
+
+/**
+ * EXAMEN | LISTE CLIENTS
+*/
+
+Route::get('/clients', [
+    'as' => 'clients.index',
+    'uses' => 'ClientsController@index'
+])->middleware('auth');
+
+// route pour l'appel ajax
+Route::post('clients/retrouver', [
+
+    'as' => 'clients.retrouverClients',
+
+    'uses' => 'ClientsController@retrouverClients',
 
 ]);

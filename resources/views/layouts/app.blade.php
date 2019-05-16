@@ -17,13 +17,12 @@
     <meta name="theme-color" content="#ffffff">
 
     <!--FONTS-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,400italic' rel='stylesheet'
           type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-
-
 
 
     <!--CSS-->
@@ -41,11 +40,34 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139518099-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-139518099-1');
     </script>
+    <script src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=heituld6kruditdrblrpzgk6eh5b5tzv8o8i731qv52sribp"></script>
+    <script>tinymce.init({
+            selector:'textarea.tinymce',
+            menubar: false,
+            plugins: 'paste, charmap, link, image, media, lists, code, table',
+
+            style_formats: [
+                {title: 'Important', inline: 'span', classes: 'important'},
+                {title: 'Paragraphe important', block: 'p', classes: 'important'},
+                {title: 'Barré', inline: 'span', classes: 'barre'},
+                {title: 'Couleur 1', inline: 'span', classes: 'couleur1'},
+                {title: 'Couleur 2', inline: 'span', classes: 'couleur2'},
+                {title: 'Couleur 3', inline: 'span', classes: 'couleur3'}
+            ],
+            toolbar: 'undo redo | bold italic | bullist numlist | table tableinsertrowbefore tableinsertcolbefore tabledeleterow tabledeletecol | pastetext removeformat | code | CODE | charmap link image media | styleselect formatselect',
+            content_css: [
+                '/css/tinymce.css'
+            ]
+        });</script>
 </head>
 
 <body>
@@ -147,6 +169,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
+                @auth
+                <a class="btn btn-dark" href="{{route('clients.index')}}">Afficher les clients</a>
+                @endauth
                 <p>Ce site est un projet étudiant réalisé dans le cadre du cours Développement Web 2 au cégep de
                     Victoriaville.<br/>Toutes les données présentées sont fictives.</p>
                 <p>&nbsp;</p>
@@ -154,6 +179,7 @@
                 <p>&copy; Maquette OneCloud par Jotran, 2014, <a rel="nofollow noopener"
                                                                  href="http://freetemplates.pro/">FreeTemplates.pro</a>
                 </p>
+
             </div>
         </div>
     </div>
